@@ -1,0 +1,23 @@
+idf_component_register(
+        SRCS
+            "src/main.cpp"
+            "src/Servo/Servo_Driver.cpp"
+            "src/LCD/LCD_Driver.cpp"
+            "src/LVGL/LVGL_Driver.cpp"
+            "src/LVGL/UI_Controller.cpp"
+            "src/UI/eye2.c"
+        INCLUDE_DIRS
+            "src"
+            "src/Servo"
+            "src/LCD"
+            "src/LVGL"
+            "src/UI"
+        REQUIRES
+            esp_driver_uart
+            esp_driver_i2c
+            esp_lcd_gc9a01
+            esp_lcd_touch
+            esp_lcd_touch_cst816s
+            esp_timer
+            pca9685
+)

@@ -1,0 +1,10 @@
+# Build tolders
+build
+cmake-build-default-esp-idf-event-trace
+
+managed_components
+
+# IDE stuff
+.junie
+.idea
+.refact
